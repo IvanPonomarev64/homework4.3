@@ -9,4 +9,3 @@ for a in l1[::-1]:
 for b in l2[::-1]:
     c2 += str(b)
 
-print(int(c) + int(c2))
