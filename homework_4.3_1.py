@@ -8,10 +8,9 @@ nested_list = [
 class FlatIterator:
 
     def __init__(self, nested_list):
-        self.nested_list = nested_list
+        self.item = sum(nested_list, [])
 
     def __iter__(self):    
-        self.item = sum(self.nested_list, [])
         return iter(self.item)
 
     def __next__(self):
